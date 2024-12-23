@@ -176,15 +176,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initializePage();
 
   // Add event listener for layout toggle
-  if (toggleBtn) {
-    toggleBtn.addEventListener("click", () => {
-      if (useSidebar) {
-        switchToTopbar();
-      } else {
-        switchToSidebar();
-      }
-    });
-  }
 
   // Add event listener for theme toggle
 

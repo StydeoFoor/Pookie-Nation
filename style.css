@@ -1,10 +1,7 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  background: rgb(44, 44, 44);
+  background:rgb(44, 44, 44);
   color: white;
-  margin-top: 60px; /* Prevent overlap with topbar */
+  font-family: sans-serif
 }
 p {
   color: white;
@@ -19,15 +16,13 @@ h2 {
 h3 {
   color: rgb(255, 255, 255);
 }
-
-/* Top Navigation Bar Styling */
 .topbar {
   height: 60px;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgb(24, 24, 24);
+  background-color:rgb(24, 24, 24);
   z-index: 1;
   display: flex;
   align-items: center;
@@ -35,18 +30,20 @@ h3 {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 0 20px;
 }
-
 .topbar a {
   text-decoration: none;
   font-size: 18px;
   color: white;
   padding: 10px 15px;
-  transition: background-color 0.3s ease, border-radius 0.3s ease;
+  transition: 0.3s;
 }
-
 .topbar a:hover {
+  color: white;
   background-color: rgb(44, 44, 44);
   border-radius: 5px;
+}
+body {
+  margin-top: 60px; /* To prevent content overlap with the top bar */
 }
 
 .button-container {
@@ -87,6 +84,8 @@ h3 {
   color: #555;
 }
 
+
+
 .logo {
     font-family: 'Notable', sans-serif;
 }
@@ -100,9 +99,9 @@ h3 {
 }
 
 #content {
+  margin-left: 0;
   padding: 16px;
 }
-
 /* Sidebar styles */
 
 /* Button styles */
