@@ -166,8 +166,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ===== Initialize Page =====
   function initializePage() {
-    initializeTheme();
-    initializeLayout();
     initializeLoginForm();
     initializeDashboard();
     initOwnerDashboard();
