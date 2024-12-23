@@ -93,7 +93,7 @@ function containsBannedWords(message) {
 }
 
 function sendMessage(message) {
-  const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+  const loggedInUser = JSON.parse(localStorage.getItem("PookloggedInUser"));
   if (!loggedInUser) {
     console.log("User is not logged in");
     return;
@@ -168,7 +168,7 @@ function displayMessages(messages) {
     return;
   }
 
-  const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+  const loggedInUser = JSON.parse(localStorage.getItem("PookloggedInUser"));
   const allowedRoles = ["Owner", "Manager", "Vice Manager", "Developer"];
   const canDelete = allowedRoles.includes(loggedInUser?.role); // Check if the user can delete messages
 

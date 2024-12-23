@@ -15,7 +15,7 @@ const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
 
 let currentChatId = null;
-let loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+let loggedInUser = JSON.parse(localStorage.getItem("PookloggedInUser"));
 
 // Validate logged-in user and extract name
 if (!loggedInUser || !loggedInUser.name) {

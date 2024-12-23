@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
             // Validate the password
             if (user.password === password) {
-              localStorage.setItem("loggedInUser", JSON.stringify(user)); // Store only the logged-in user's info
+              localStorage.setItem("PookloggedInUser", JSON.stringify(user)); // Store only the logged-in user's info
               alert("Login successful!");
               window.location.href = "dashboard.html";
             } else {
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ===== Dashboard Logic =====
   function populateDashboard() {
-    const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+    const loggedInUser = JSON.parse(localStorage.getItem("PookloggedInUser"));
 
     // Redirect to login only if not already on the login page
     if (!loggedInUser && !window.location.pathname.includes("login.html")) {
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function CongressmenMessage() {
-    const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+    const loggedInUser = JSON.parse(localStorage.getItem("PookloggedInUser"));
 
     const bodyMsg = document.getElementById("congMsg");
 
@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function ownerDashboard() {
-    const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+    const loggedInUser = JSON.parse(localStorage.getItem("PookloggedInUser"));
 
     const allowedRoles = [
       "President",

@@ -21,7 +21,7 @@ const database = getDatabase(app); // Get Firebase Database instance
 
 // Send message function using 'set'
 function sendMessage(message) {
-  const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+  const loggedInUser = JSON.parse(localStorage.getItem("PookloggedInUser"));
   if (!loggedInUser) {
     console.log("User is not logged in");
     return;

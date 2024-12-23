@@ -109,7 +109,7 @@ async function displayUserList(users) {
     li.appendChild(muteButton);
 
     // Add Role Change button (visible only to specific users)
-    const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+    const loggedInUser = JSON.parse(localStorage.getItem("PookloggedInUser"));
     const allowedToChangeRoles = loggedInUser?.name === "Anthony";
 
     if (allowedToChangeRoles) {
