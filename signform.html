@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Pookie Nation</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <div id="myTopBar" class="topbar">
+    <a href="index.html" class="logo">Pooks</a>
+    <a href="dashboard.html" style="color: white;">Dashboard</a>
+    <a href="messages.html" style="color: white;">Messages</a>
+    <a href="settings.html" style="color: white;">Settings</a>
+    <a href="signup.html" style="color: white;">Sign-up</a>
+    <a href="login.html" style="color: white;">Log-in</a>
+    <a href="info.html">Info</a>
+  </div>
+
+  <div id="content">
+    <h1>Fill out this form</h1>
+    <h2>Your description should be as follows</h2>
+    <h3>Your wanted Username</h3>
+    <h3>Your wanted Password</h3>
+    <h3>Other information</h3>
+
+    <form id="requestForm" style="
+        max-width: 400px;
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      ">
+      <label for="requestDescription" style="
+          display: block;
+          margin-bottom: 5px;
+          font-weight: bold;
+          font-size: 14px;
+          color: white;
+        ">Description</label>
+      <textarea id="requestDescription" required style="
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 15px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 14px;
+          resize: none;
+          box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+        "></textarea>
+
+      <label for="requestName" style="
+          display: block;
+          margin-bottom: 5px;
+          font-weight: bold;
+          font-size: 14px;
+          color: white;
+        ">Name</label>
+      <input type="text" id="requestName" required style="
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 20px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 14px;
+          box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+        " />
+
+      <button id="submit" type="submit" style="
+          width: 100%;
+          padding: 10px;
+          font-size: 16px;
+          font-weight: bold;
+          background-color: #007bff;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s ease, transform 0.2s ease;
+        " onmouseover="this.style.backgroundColor='#0056b3'" onmouseout="this.style.backgroundColor='#007bff'">
+        Submit Request
+      </button>
+    </form>
+    <div id="container"></div>
+  </div>
+  <script type="module" src="signform.js"></script>
+
+</body>
+
+</html>
